@@ -93,12 +93,49 @@ h2 {
 }
 
 .why {
-    background-image: url(hero-image.jpg);
+    background-image: url(why-bg-img.jpg);
+    /* height: 800px; */
+    /* object-fit: fill; */
+    /* object-position: center; */
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position-x: right;
+    
 }
+
+
 
 .why-list li {
   margin-bottom: 15px;
+
 }
+
+.why .why-container {
+  text-align: left;
+}
+
+.why-list {
+  background: #FDF5E6;
+  padding: 24px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  max-width: 500px;   /* optional */
+  margin: 0 auto;     /* centers the container */
+}
+
+.why-list li {
+  list-style: none;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.why-list li:last-child {
+  margin-bottom: 0;
+}
+
+
 
 /* ================= PROCESS ================= */
 .process-steps {
@@ -325,3 +362,48 @@ footer {
   background: #3a231f;
   transform: translateY(-2px);
 }
+
+
+
+/* ===== Testimonials Section ===== */
+.testimonials-section {
+  background-color: #4B2E2A;
+}
+
+.single-testimonial {
+  background: rgba(253, 245, 230, 0.06);
+  border: 1px solid rgba(217, 199, 160, 0.25);
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  height: 100%;
+}
+
+.single-testimonial p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #FDF5E6;
+  margin-bottom: 20px;
+}
+
+.single-testimonial h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #D9C7A0;
+  margin-bottom: 5px;
+}
+
+.single-testimonial span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: rgba(253, 245, 230, 0.7);
+}
+
+/* ===== Fix Testimonials Heading Visibility ===== */
+.testimonials-section .section-title h2 {
+  color: #D9C7A0 !important;
+}
+
+
