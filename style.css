@@ -1,0 +1,327 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ================= COLORS ================= */
+:root {
+  --primary: #D9C7A0;
+  --dark: #4B2E2A;
+  --light: #FDF5E6;
+}
+
+/* ================= GLOBAL ================= */
+body {
+  background-color: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ================= BUTTON ================= */
+.btn-primary {
+  display: inline-block;
+  padding: 14px 28px;
+  background: var(--dark);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+/* ================= HERO ================= */
+.hero {
+  background: var(--primary);
+  padding: 100px 0;
+  text-align: center;
+  
+}
+
+
+
+.hero h1 {
+  font-size: 42px;
+
+}
+
+.hero span {
+  color: var(--dark);
+}
+
+.hero p {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+/* ================= SECTIONS ================= */
+section {
+  padding: 80px 0;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* ================= SERVICES ================= */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* ================= WHY ================= */
+.why-list {
+  list-style: none;
+  max-width: 600px;
+  margin: auto;
+}
+
+.why {
+    background-image: url(hero-image.jpg);
+}
+
+.why-list li {
+  margin-bottom: 15px;
+}
+
+/* ================= PROCESS ================= */
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.step {
+  background: var(--primary);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* ================= CONTACT ================= */
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input {
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  border: none;
+  cursor: pointer;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--dark);
+  color: #fff;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+}
+
+
+
+
+
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+
+
+
+
+
+
+.hero-content h1 {
+  font-size: 42px;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  margin-top: 15px;
+  font-size: 18px;
+  max-width: 500px;
+}
+
+
+
+
+
+
+.hero-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.hero-form h3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.hero-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-form input {
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+
+
+
+
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .hero-form {
+    margin-top: 40px;
+  }
+}
+
+
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 40px;
+  align-items: center;
+}
+
+
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+
+.hero-image img {
+  width: 65%;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.hero-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.hero-form h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-right {
+    margin-top: 40px;
+  }
+}
+
+
+/* ================= FINAL CTA ================= */
+.final-cta {
+  background: var(--primary);
+  padding: 80px 0;
+}
+
+.cta-box {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.final-cta h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.final-cta p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: var(--dark);
+}
+
+/* Mobile CTA */
+@media (max-width: 768px) {
+  .final-cta h2 {
+    font-size: 28px;
+  }
+}
+
+
+/* ================= SERVICE CTA BUTTON ================= */
+.btn-service {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: var(--dark);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.btn-service:hover {
+  background: #3a231f;
+  transform: translateY(-2px);
+}
