@@ -48,68 +48,9 @@
       <!-- FORM -->
     <div class="hero-form">
         
-         <h3>Get a Free Consultation</h3>
-        <form>
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Email Address" required />
-          <input type="tel" placeholder="Phone Number" required />
-          <button type="submit" class="btn-primary">Submit</button>
-        </form>
+         <script src="https://js-na2.hsforms.net/forms/embed/244727362.js" defer></script>
+<div class="hs-form-frame" data-region="na2" data-form-id="d3786581-4896-4a01-a1c1-805497584676" data-portal-id="244727362"></div>
 
-        <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("leadForm");
-
-  if (!form) return;
-
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const portalId = "244727362";
-    const formId = "d3786581-4896-4a01-a1c1-805497584676";
-
-    const endpoint = `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formId}`;
-
-    const formData = new FormData(form);
-    const fields = [];
-
-    formData.forEach((value, name) => {
-      fields.push({
-        name: name,
-        value: value
-      });
-    });
-
-    const payload = {
-      fields: fields,
-      context: {
-        pageUri: window.location.href,
-        pageName: document.title
-      }
-    };
-
-    fetch(endpoint, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(payload)
-    })
-    .then(response => {
-      if (response.ok) {
-        // 👉 ADD YOUR THANK YOU PAGE URL BELOW
-        window.location.href = "  ";
-      } else {
-        alert("Submission failed. Please try again.");
-      }
-    })
-    .catch(error => {
-      console.error("Error:", error);
-      alert("Something went wrong. Please try again.");
-    });
-  });
-});
-</script>
 
       </div>
 
@@ -295,3 +236,4 @@ I focus on what matters most visibility, quality leads, and measurable results. 
 
 </body>
 </html>
+
